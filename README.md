@@ -7,3 +7,4 @@ Only can Earse the flash of ESP32
 # Next Version
 1.add the function of connect PyCharm
 2.add flash view of ESP32
+D:\Coding\Projects\ESP32Project\ESP32串口助手

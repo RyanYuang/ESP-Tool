@@ -1,7 +1,8 @@
 import serial
 import serial.tools.list_ports
-import UITEST
-import varity
+from Libs import varity
+
+
 class Serial:
     def __init__(self):
         # self.Device = serial.Serial("COM21",115200)
@@ -19,6 +20,7 @@ class Serial:
         while True:
             self.portList = list(serial.tools.list_ports.comports())
             SerialPortList = []
+            self.comports = []
             self.LastNumOfPort = self.NumOfPort
             for comport in self.portList:
                 SerialPortList.append((comport)[0]+list(comport)[1])
