@@ -4,6 +4,7 @@ import UITEST
 import varity
 class Serial:
     def __init__(self):
+        # self.Device = serial.Serial("COM21",115200)
         self.portList = list(serial.tools.list_ports.comports())
         self.NumOfPort = len(self.portList)
         self.LastNumOfPort = 0
